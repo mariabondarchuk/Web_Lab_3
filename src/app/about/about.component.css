@@ -1,0 +1,44 @@
+* {
+  font-family: "Gill Sans", sans-ser, serif !important;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-app-card {
+  padding: 25px;
+  width: 65% !important;
+  animation-name: card;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+.wrapper  {
+  width: 1420px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  outline: none !important;
+  padding: 10px 20px;
+  font-size: 20px !important;
+  transition: .2s;
+}
+.wrapper .btn:hover {
+  border-color: black;
+  background: transparent;
+}
+
+
+@media (max-width: 830px) {
+  .about-app-card {
+    min-width: 20rem !important;
+    max-width: 50rem !important;
+    width: 100% !important;
+    font-size: 14px;
+    white-space: normal;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  font-family: "Gill Sans", sans-ser, serif !important;
+}
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.about-me-card {
+  white-space: nowrap;
+  border-radius: 20px !important;
+  padding: 50px;
+  min-width: 25rem !important;
+}
+
+.wrapper {
+  width: 420px;
+  box-sizing: border-box;
+  background: transparent !important;
+  border: 2px solid transparent;
+  outline: none !important;
+  padding: 10px 20px;
+  font-size: 20px !important;
+  transition: .2s;
+}
+.wrapper .btn:hover {
+  border-color: black;
+  background: transparent;
+}
+
+@media (max-width: 750px) {
+  .about-me-card {
+    min-width: 20rem !important;
+    max-width: 30rem !important;
+    padding: 5px;
+    font-size: 14px;
+    white-space: normal;
+  }
+}

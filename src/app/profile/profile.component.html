@@ -1,0 +1,28 @@
+<div class="container-fluid wrapper">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 about-me-card">
+        <div class="card-header">About me</div>
+        <div class="card-body ">
+          <div class="row mb-3">
+            <span class="col-4 ">Name :</span>
+            <p class="col-7" id="name">{{ user?.name || 'No info' }}</p>
+          </div>
+          <div class="row mb-3">
+            <span class="col-4 ">Email :</span>
+            <p class="col-7" id="email">{{ user?.email || 'No info' }}</p>
+          </div>
+          <div class="row mb-3">
+            <span class="col-4 ">Sex :</span>
+            <p class="col-7" id="sex">{{ user?.sex || 'No info' }}</p>
+          </div>
+          <div class="row mb-3">
+            <span class="col-4 ">Birth date :&nbsp;</span>
+            <p class="col-4" id="birthDate">{{ user?.birthDate || 'No info' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="redirectToMain()">Start</button>
+</div>
